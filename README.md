@@ -3,17 +3,22 @@
 Unity C# 개발자의 파이썬 학습 기록입니다.
 로봇 데이터를 읽고, 분석하고, 시각화하는 프로그램을 강의 단위로 조금씩 키워 갑니다.
 
+## 바로가기
+
+- [진도표 (PROGRESS.md)](PROGRESS.md) — 지금 어디까지 했는지, 다음에 할 일
+- [새 PC 설정 (SETUP.md)](SETUP.md) — 다른 PC에서 이어서 하는 방법
+
 ## 강의 목록
 
-| 강 | 주제 | 파일 | 핵심 |
-|---|---|---|---|
-| 1 | 변수와 자료형 | `lesson1_variables.py` | 동적 타입, f-string, `/` `//` `%` |
-| 2 | list, dict, 반복문 | `lesson2_list_dict.py` | 인덱싱, 슬라이싱, `dict.get`, `for` |
-| 3 | 함수와 모듈 | `lesson3_functions.py` | `def`, 기본값 인자, 여러 값 반환, `import` |
-| 4 | 파일과 예외 처리 | `lesson4_csv.py` | `with open`, `csv.DictReader`, `try / except` |
-| 5 | 클래스 | `lesson5_class.py` | `__init__`, `self`, `__str__` |
-| 6 | pandas, matplotlib | `lesson6_graph.py` | DataFrame, 조건 필터, NaN, 그래프 |
-| 실습 | 실시간 시각화 | `fake_robot.py`, `live_graph.py` | UDP 소켓, JSON, 실시간 그래프 |
+| 강 | 주제 | 코드 | 노트 | 핵심 |
+|---|---|---|---|---|
+| 1 | 변수와 자료형 | `lesson1_variables.py` | [노트](notes/lesson1.md) | 동적 타입, f-string, `/` `//` `%` |
+| 2 | list, dict, 반복문 | `lesson2_list_dict.py` | [노트](notes/lesson2.md) | 인덱싱, 슬라이싱, `dict.get`, `for` |
+| 3 | 함수와 모듈 | `lesson3_functions.py` | [노트](notes/lesson3.md) | `def`, 기본값 인자, 여러 값 반환, `import` |
+| 4 | 파일과 예외 처리 | `lesson4_csv.py` | [노트](notes/lesson4.md) | `with open`, `csv.DictReader`, `try / except` |
+| 5 | 클래스 | `lesson5_class.py` | [노트](notes/lesson5.md) | `__init__`, `self`, `__str__` |
+| 6 | pandas, matplotlib | `lesson6_graph.py` | [노트](notes/lesson6.md) | DataFrame, 조건 필터, NaN, 그래프 |
+| 실습 | 실시간 시각화 | `fake_robot.py`, `live_graph.py` | [노트](notes/live-practice.md) | UDP 소켓, JSON, 실시간 그래프 |
 
 3~5강에서 만든 분석 함수와 클래스는 `robot_analysis.py`에 모여 있습니다.
 
@@ -23,8 +28,10 @@ Unity C# 개발자의 파이썬 학습 기록입니다.
 - VS Code + Python 확장 (Microsoft)
 
 ```
-python -m pip install pandas matplotlib
+python -m pip install -r requirements.txt
 ```
+
+처음 설치부터 하려면 [SETUP.md](SETUP.md)를 보세요.
 
 ## 실행 방법
 
